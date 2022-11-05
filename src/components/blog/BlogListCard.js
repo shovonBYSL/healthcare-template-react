@@ -43,7 +43,7 @@ const BlogListCard = ({ data, children }) => {
         } border-b border-tertiary-500`}
       >
         <p className="text-tertiary-500 font-semibold lg:text-lg 2xl:text-2xl mb-2">
-          {title} {data.id}
+          {title}
         </p>
         <p className="text-tertiary-600 text-xs xl:text-sm">{summary}</p>
         {children}

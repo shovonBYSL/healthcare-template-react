@@ -9,7 +9,6 @@ import BlogSidebar from "./BlogSidebar";
 const BlogListContent = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
-  // 0, 10, 20, 30....
   const PER_PAGE = 3;
   const offset = currentPage * PER_PAGE;
   const pageCount = Math.ceil(data.length / PER_PAGE);

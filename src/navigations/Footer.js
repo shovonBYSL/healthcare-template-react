@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logoLight from "../assets/images/logo/logoLight.svg";
 import { footerData } from "../assets/data/navigations/footerData";
 import { headerSocialLinks } from "../assets/data/navigations/headerData";
-
+import { currentYear } from "../utils/commonFunctions";
 
 const Footer = () => {
   return (
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="py-3 text-center text-xs lg:text-sm xl:text-base xl:font-semibold bg-primary-600">
-        copyright @2022 reserved by medical healthcare center
+        copyright @{currentYear} reserved by medical healthcare center
       </p>
     </div>
   );

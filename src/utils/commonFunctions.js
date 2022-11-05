@@ -5,4 +5,6 @@ const scrollTop = () => {
   });
 };
 
-export { scrollTop };
+const currentYear = new Date().getFullYear();
+
+export { scrollTop, currentYear };

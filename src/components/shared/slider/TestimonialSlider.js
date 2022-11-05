@@ -56,12 +56,8 @@ const TestimonialSlider = () => {
                   <div className="grid grid-cols-10 space-y-2 mb-10">
                     <div className="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4">
                       <img
-                        src={
-                          img
-                            ? img
-                            : require("../../../assets/images/testimonial/user.png")
-                        }
-                        alt="testimonial map"
+                        src={require("../../../assets/images/testimonial/user.png")}
+                        alt="testimonial"
                         className="h-9 w-9 rounded-full"
                       />
                       <div>

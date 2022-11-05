@@ -27,7 +27,7 @@ const doctorsSkillsData = {
 const allDoctors = [
   {
     id: 0,
-    name: "Dr. Patrick Soon",
+    name: "Dr. Abul Hasan",
     speciality: "Neurology",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor tellus eu consectetur neque elit quis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis nunc.",
@@ -53,7 +53,7 @@ const allDoctors = [
   },
   {
     id: 1,
-    name: "Dr. William A. Abdu",
+    name: "Dr. Patrick Soon",
     speciality: "Urology",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor tellus eu consectetur neque elit quis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis nunc.",
