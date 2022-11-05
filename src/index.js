@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 import App from "./App";
+import ScrollToTop from "./utils/ScrollToTop";
 
 import "./assets/styles/global.css";
 import "./assets/styles/buttons.css";
@@ -23,6 +24,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <ToastContainer theme="dark" />
       <App />
     </BrowserRouter>
