@@ -30,9 +30,9 @@ const BlogListContent = ({ data }) => {
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 lg:col-span-8 2xl:col-span-9">
           <div className="space-y-6 xl:space-y-10">
-            {data.slice(offset, offset + perPage).map((item) => (
-              <div>
-                <Link key={item.id} to={`/blog-details/${item.slug}`}>
+            {data.slice(offset, offset + perPage).map((item, i) => (
+              <div key={i}>
+                <Link to={`/blog-details/${item.slug}`}>
                   <BlogListCard data={item} />
                 </Link>
               </div>

@@ -39,7 +39,6 @@ const BlogGridContent = ({ data }) => {
           nextLabel={<IoChevronForward className="xl:text-xl" />}
           pageCount={pageCount}
           onPageChange={handlePagination}
-          // pageRangeDisplayed={0}
           renderOnZeroPageCount={null}
           containerClassName={"pagination"}
           previousLinkClassName={"pagination__link"}

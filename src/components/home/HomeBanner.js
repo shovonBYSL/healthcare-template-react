@@ -3,7 +3,8 @@ import { BannerSubTitle, BannerTitle } from "../shared/SharedTextGroup";
 const HomeBanner = () => {
   return (
     <div
-      data-aos="fade-up" data-aos-duration="4000"
+      data-aos="fade-up"
+      data-aos-duration="4000"
       data-aos-offset="200"
       data-aos-delay="20"
       data-aos-easing="ease-in-out"
@@ -31,10 +32,12 @@ const HomeBanner = () => {
           <BannerTitle label="Making Health Care" />
           <BannerSubTitle label="We at Medicare are always fully focused on helping your to overcame any surgeon procedure with great commitment and easy recovery." />
           <div className="mt-3 md:mt-5 xl:mt-8 flex gap-3 xl:gap-6">
-            <button className="bg-primary-600 hover:bg-primary-500 border border-transparent text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
+            {/* <button className="relative overflow-hidden z-10 btn-animate-primary border border-transparent text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500"> */}
+            <button className="btn-zoom-primary relative text-white hover:text-primary-600 bg-primary-600 hover:bg-transparent text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
               Appointment
             </button>
-            <button className="hover:bg-primary-600 border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
+            {/* <button className="hover:bg-primary-600 border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500"> */}
+            <button className="relative overflow-hidden btn-slide-outline-primary border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
               View Doctors
             </button>
           </div>

@@ -35,7 +35,7 @@ const DoctorsConnection = () => {
             tiam ltricies lputate
           </p>
           <Link to="/doctors">
-            <button className="text-primary-600 text-xxxs xxs:text-xs xl:text-base font-medium border border-primary-600 rounded-[10px] px-3 xl:px-4 py-1.5 xl:py-3 mt-4 xl:mt-8">
+            <button className="relative overflow-hidden btn-slide-outline-primary text-primary-600 hover:text-white text-xxxs xxs:text-xs xl:text-base font-medium border border-primary-600 rounded-[10px] px-3 xl:px-4 py-1.5 xl:py-3 mt-4 xl:mt-8 transition-all duration-500">
               See All Doctors
             </button>
           </Link>

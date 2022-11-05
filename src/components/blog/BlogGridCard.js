@@ -2,7 +2,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 
 const BlogGridCard = ({ data }) => {
-  const { slug, title, author, summary, published, cardImg, likes, comments } =
+  const {id, slug, title, author, summary, published, cardImg, likes, comments } =
     data;
 
   const location = useLocation();
@@ -47,7 +47,7 @@ const BlogGridCard = ({ data }) => {
           <Stats img="heart" label={`${likes} Likes`} />
         </div>
         <p className="text-tertiary-600 font-semibold 2xl:text-xl mt-3">
-          {title}
+          {title} {id}
         </p>
         <p className="text-tertiary-400 text-xs 2xl:text-sm mt-1.5 mb-4 xl:mb-6">
           {summary.slice(0, 140)}...

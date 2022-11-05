@@ -9,7 +9,7 @@ const AboutUs = ({ data }) => {
   const { header, title, subTitle, img, details } = data;
 
   const [isOpen, setIsOpen] = useState(false);
-  const [accordionActive, setAccordionActive] = useState("");
+  const [accordionActive, setAccordionActive] = useState(0);
 
   return (
     <div

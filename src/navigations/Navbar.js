@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const AppointmentButton = () => (
     <Link to="/appointment">
-      <button className="px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg bg-secondary-500 hover:bg-secondary-600 text-white text-[8px] md:text-xs xl:text-base transition-all duration-300">
+      <button className="z-10 relative overflow-hidden btn-slide-secondary px-2.5 lg:px-7 py-[6px] lg:py-2.5 rounded-sm md:rounded xl:rounded-lg text-white text-[8px] md:text-xs xl:text-base transition-all duration-300">
         Appointment
       </button>
     </Link>

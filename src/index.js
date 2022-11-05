@@ -14,6 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import App from "./App";
 
 import "./assets/styles/global.css";
+import "./assets/styles/buttons.css";
 import "./assets/styles/animations.css";
 import "./assets/styles/navigations.css";
 import "./assets/styles/swiperSlider.css";
