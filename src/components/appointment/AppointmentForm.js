@@ -138,7 +138,7 @@ const AppointmentForm = () => {
             />
             <button
               type="submit"
-              className="col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg bg-secondary-500 text-white text-xs md:text-sm xl:text-base"
+              className="z-10 relative overflow-hidden btn-slide-secondary col-span-2 w-max mx-auto lg:mx-0 px-6 py-2.5 rounded-lg text-white text-xs md:text-sm xl:text-base"
             >
               Make an Appointment
             </button>
@@ -160,19 +160,19 @@ const AppointmentForm = () => {
               You can book a first consultation meeting which is free of charge,
               to talk about what you are looking for.
             </p>
-            <div className="flex items-center gap-1.5 px-8 py-3 rounded-[10px] w-max mx-auto bg-primary-700 mt-12">
+            <a
+              href="tel:+95552 88559"
+              className="flex items-center gap-1.5 px-8 py-3 rounded-[10px] w-max mx-auto bg-primary-700 mt-12"
+            >
               <img
                 src={require("../../assets/images/icons/phone.svg").default}
                 alt="icon"
                 className="h-6 2xl:h-8 w-6 2xl:w-8"
               />
-              <a
-                href="tel:+95552 88559"
-                className="text-white font-semibold lg:text-lg 2xl:text-2xl"
-              >
+              <p className="text-white font-semibold lg:text-lg 2xl:text-2xl">
                 +95552 88559
-              </a>
-            </div>
+              </p>
+            </a>
           </div>
         </div>
       </div>

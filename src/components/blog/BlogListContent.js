@@ -10,11 +10,11 @@ const BlogListContent = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
   // 0, 10, 20, 30....
-  const perPage = 3;
-  const offset = currentPage * perPage;
-  const pageCount = Math.ceil(data.length / perPage);
+  const PER_PAGE = 3;
+  const offset = currentPage * PER_PAGE;
+  const pageCount = Math.ceil(data.length / PER_PAGE);
 
-  const handlePagination = ({ selected: selectedPage }) => {
+  const handlePageClick = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
   };
 
@@ -30,7 +30,7 @@ const BlogListContent = ({ data }) => {
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 lg:col-span-8 2xl:col-span-9">
           <div className="space-y-6 xl:space-y-10">
-            {data.slice(offset, offset + perPage).map((item, i) => (
+            {data.slice(offset, offset + PER_PAGE).map((item, i) => (
               <div key={i}>
                 <Link to={`/blog-details/${item.slug}`}>
                   <BlogListCard data={item} />
@@ -43,7 +43,7 @@ const BlogListContent = ({ data }) => {
               previousLabel={<IoChevronBack className="xl:text-xl" />}
               nextLabel={<IoChevronForward className="xl:text-xl" />}
               pageCount={pageCount}
-              onPageChange={handlePagination}
+              onPageChange={handlePageClick}
               renderOnZeroPageCount={null}
               containerClassName={"pagination"}
               previousLinkClassName={"pagination__link"}

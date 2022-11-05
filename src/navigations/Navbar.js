@@ -9,7 +9,6 @@ import { navbarData } from "../assets/data/navigations/navbarData";
 
 const Navbar = () => {
   const router = useLocation();
-
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
   const [isBig, setIsBig] = useState(true);
