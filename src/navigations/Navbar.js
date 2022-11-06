@@ -9,7 +9,7 @@ import { navbarData } from "../assets/data/navigations/navbarData";
 
 const Navbar = () => {
   const router = useLocation();
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1024px)" });
 
   const [isBig, setIsBig] = useState(true);
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                               {dropdowns.map(({ id, label, path }) => (
                                 <Link key={id} to={path}>
                                   <p
-                                    className={`px-2.5 py-1 rounded block hover:text-primary-400 transition-all duration-200 ${
+                                    className={`px-2.5 py-1 rounded block hover:text-primary-400 ${
                                       router.pathname === path
                                         ? "text-primary-600 bg-primary-50/50"
                                         : "text-tertiary-300"
