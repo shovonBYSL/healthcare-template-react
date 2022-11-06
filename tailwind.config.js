@@ -52,7 +52,6 @@ module.exports = {
           900: "#394F1A",
         },
         tertiary: {
-          0: "#ffffff",
           10: "#fafafa",
           20: "#f5f5f5",
           30: "#ebebeb",
@@ -70,7 +69,6 @@ module.exports = {
           600: "#2e2e2e",
           700: "#1c1c1c",
           800: "#0d0d0d",
-          900: "#000000",
         },
       },
       fontSize: {

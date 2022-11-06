@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
+// components
 import BlogListCard from "./BlogListCard";
 import BlogSidebar from "./BlogSidebar";
 

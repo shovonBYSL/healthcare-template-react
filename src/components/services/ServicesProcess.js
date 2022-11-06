@@ -1,3 +1,4 @@
+// components
 import { SectionHeader } from "../shared/SharedTextGroup";
 
 const ServicesProcess = ({ data }) => {

@@ -31,7 +31,6 @@
   transform: rotate(-45deg);
 }
 
-
 /* paginations  */
 .pagination {
   display: flex;
@@ -46,26 +45,24 @@
   height: 40px;
   width: 40px;
   border-radius: 8px;
-  color: #212B36;
+  color: #212b36;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .pagination__link {
-  color: #212B36;
-
+  color: #212b36;
 }
 
 .pagination__link--active a {
-  color: #00AB55;
-  background-color: #EBF9F2;
+  color: #00ab55;
+  background-color: #ebf9f2;
 }
 
 .pagination__link--disable a {
   color: #393e5066 !important;
 }
-
 
 @media (max-width: 1279px) {
   .pagination {

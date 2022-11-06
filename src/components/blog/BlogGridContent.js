@@ -2,6 +2,7 @@ import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
+// component
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 import BlogGridCard from "./BlogGridCard";
 

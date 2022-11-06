@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { VscPlay } from "react-icons/vsc";
 
+// components
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 import VideoModal from "../shared/VideoModal";
 

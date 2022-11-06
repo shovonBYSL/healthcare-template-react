@@ -1,3 +1,4 @@
+// components
 import OpeningHours from "../shared/OpeningHours";
 
 const AboutHospital = ({ data }) => {

@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import StickyBox from "react-sticky-box";
 
+// data
 import { categories } from "../../assets/data/blogData";
+
+// utility function
 import { scrollTop } from "../../utils/commonFunctions";
 
 const BlogSidebar = ({ data }) => {

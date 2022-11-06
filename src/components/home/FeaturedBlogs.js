@@ -1,3 +1,4 @@
+// components
 import BlogGridCard from "../blog/BlogGridCard";
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 

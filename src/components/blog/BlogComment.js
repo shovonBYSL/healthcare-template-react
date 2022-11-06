@@ -1,7 +1,9 @@
 const BlogComment = ({ data }) => {
   const { comments } = data;
 
-  const handleComment = () => {};
+  const handleComment = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import logoLight from "../assets/images/logo/logoLight.svg";
 import { footerData } from "../assets/data/navigations/footerData";
 import { headerSocialLinks } from "../assets/data/navigations/headerData";
+
+// utility function
 import { currentYear } from "../utils/commonFunctions";
 
 const Footer = () => {

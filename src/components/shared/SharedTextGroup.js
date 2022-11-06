@@ -38,9 +38,6 @@ const BannerSubTitle = ({ label }) => (
   </p>
 );
 
-// <p className="text-tertiary-400 text-xs lg:text-sm xl:text-base mt-3 xl:mt-6"></p>
-// <p className="text-tertiary-500 text-xs lg:text-sm xl:text-base mt-2 xl:mt-4"></p>
-
 export {
   SectionHeader,
   SectionTitle,

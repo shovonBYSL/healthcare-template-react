@@ -1,5 +1,6 @@
 import LottieAnimation from "./LottieAnimation";
 
+// data
 import animation from "../../assets/data/animation/loader.json";
 
 const Preloader = () => {

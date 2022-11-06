@@ -1,3 +1,4 @@
+// components
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 
 const BulletPointsGallery = ({ data, reversed, twoColulm }) => {

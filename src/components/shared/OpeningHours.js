@@ -1,3 +1,4 @@
+// data
 import { appointmentHours } from "../../assets/data/appointmentData";
 
 const OpeningHours = () => {

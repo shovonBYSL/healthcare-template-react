@@ -1,3 +1,4 @@
+// data
 import facebookIcon from "../../assets/images/social/facebookGray.svg";
 import twitterIcon from "../../assets/images/social/twitterGray.svg";
 import instagramIcon from "../../assets/images/social/instagramGray.svg";

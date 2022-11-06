@@ -6,12 +6,12 @@ import BlogSidebar from "../components/blog/BlogSidebar";
 import BasicLayout from "../layouts/BasicLayout";
 import Preloader from "../components/shared/Preloader";
 import BlogListCard from "../components/blog/BlogListCard";
+import BlogComment from "../components/blog/BlogComment";
+import BlogDoctorInfoCard from "../components/blog/BlogDoctorInfoCard";
 
 // data
 import { blogData } from "../assets/data/blogData";
 import { allDoctors } from "../assets/data/doctorsData";
-import BlogDoctorInfoCard from "../components/blog/BlogDoctorInfoCard";
-import BlogComment from "../components/blog/BlogComment";
 
 const SingleBlog = () => {
   const { blogId } = useParams();

@@ -1,4 +1,4 @@
-// components
+// data
 import {
   headerAddress,
   headerSocialLinks,

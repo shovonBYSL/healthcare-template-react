@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+// components
 import { SectionTitle } from "../shared/SharedTextGroup";
 
 const DoctorsConnection = () => {
