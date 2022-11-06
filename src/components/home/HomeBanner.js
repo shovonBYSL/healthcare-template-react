@@ -6,7 +6,6 @@ const HomeBanner = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="4000"
-      data-aos-offset="200"
       data-aos-delay="20"
       data-aos-easing="ease-in-out"
       data-aos-once="false"

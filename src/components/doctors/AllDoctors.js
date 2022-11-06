@@ -11,7 +11,6 @@ const AllDoctors = ({ data }) => {
   return (
     <div
       data-aos="fade-up"
-      data-aos-offset="200"
       data-aos-delay="20"
       data-aos-easing="ease-in-out"
       data-aos-once="false"
