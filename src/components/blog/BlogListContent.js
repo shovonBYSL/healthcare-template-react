@@ -6,6 +6,7 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 // components
 import BlogListCard from "./BlogListCard";
 import BlogSidebar from "./BlogSidebar";
+import { scrollTop } from "../../utils/commonFunctions";
 
 const BlogListContent = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -16,6 +17,7 @@ const BlogListContent = ({ data }) => {
 
   const handlePageClick = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
+    scrollTop();
   };
 
   return (
