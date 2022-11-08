@@ -32,12 +32,16 @@ const HomeBanner = () => {
           <BannerTitle label="Making Health Care" />
           <BannerSubTitle label="We at Medicare are always fully focused on helping your to overcame any surgeon procedure with great commitment and easy recovery." />
           <div className="mt-3 md:mt-5 xl:mt-8 flex gap-3 xl:gap-6">
-            <button className="btn-zoom-primary relative text-white hover:text-primary-600 bg-primary-600 hover:bg-transparent text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
-              Appointment
-            </button>
-            <button className="relative overflow-hidden btn-slide-outline-primary border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
-              View Doctors
-            </button>
+            <a href="/appointment">
+              <button className="btn-zoom-primary relative text-white hover:text-primary-600 bg-primary-600 hover:bg-transparent text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
+                Appointment
+              </button>
+            </a>
+            <a href="/doctors">
+              <button className="relative overflow-hidden btn-slide-outline-primary border border-primary-600 text-primary-600 hover:text-white text-xxs xxs:text-xs rounded xl:rounded-lg px-2 xxs:px-3 xl:px-4 py-1 xl:py-2.5 mb-2 transition-all duration-500">
+                View Doctors
+              </button>
+            </a>
           </div>
         </div>
         <div className="col-span-12 md:col-span-5">
