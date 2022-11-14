@@ -28,13 +28,13 @@ const BlogSidebar = ({ data }) => {
       <>
         <SidebarTitle label={label} />
         <div className="mt-6 space-y-5">
-          {data.map(({ id, slug, title, published, cardImg }) => {
+          {data.map(({ id, slug, title, published, cardImgSm }) => {
             return (
               <div key={id}>
                 <Link onClick={scrollTop} to={`/blog-details/${slug}`}>
                   <div className="flex gap-4">
                     <img
-                      src={cardImg}
+                      src={cardImgSm}
                       alt="blog"
                       className="h-12 w-12 rounded-full object-cover"
                     />

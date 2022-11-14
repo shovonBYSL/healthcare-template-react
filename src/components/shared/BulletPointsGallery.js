@@ -32,7 +32,7 @@ const BulletPointsGallery = ({ data, reversed, twoColulm }) => {
                     alt="icon"
                     className="h-4 xl:h-6 w-4 xl:w-6"
                   />
-                  <p className="text-tertiary-600 text-xxs lg:text-xs xl:text-base">
+                  <p className="text-tertiary-600 text-xs lg:text-sm xl:text-base">
                     {item}
                   </p>
                 </div>

@@ -6,6 +6,9 @@ import { VscPlay } from "react-icons/vsc";
 import { SectionHeader, SectionTitle } from "../shared/SharedTextGroup";
 import VideoModal from "../shared/VideoModal";
 
+// data
+import video from "../../assets/videos/dummy.mp4";
+
 const AboutUs = ({ data }) => {
   const { header, title, subTitle, img, details } = data;
 
@@ -20,7 +23,7 @@ const AboutUs = ({ data }) => {
       data-aos-once="false"
       className="container py-6 md:py-10 xl:py-16"
     >
-      {isOpen && <VideoModal setIsOpen={setIsOpen} />}
+      {isOpen && <VideoModal setIsOpen={setIsOpen} video={video} />}
       <div className="grid lg:grid-cols-2 gap-6 xl:gap-9">
         <div
           onClick={() => setIsOpen(true)}
@@ -32,8 +35,8 @@ const AboutUs = ({ data }) => {
             className="h-[180px] md:h-80 lg:h-full w-full object-cover max-h-[466px] scale-[101%] group-hover:scale-105 transition-all duration-1000"
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="bg-white h-9 xl:h-20 w-9 xl:w-20 relative rounded-full flex justify-center items-center">
-              <VscPlay className="text-secondary-400 xl:text-4xl z-10 ml-1 xl:ml-1.5" />
+            <div className="bg-white h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
+              <VscPlay className="text-secondary-400 lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
             </div>
           </div>
@@ -77,7 +80,7 @@ const AboutUs = ({ data }) => {
                         : "max-h-[0px] opacity-0 invisible overflow-hidden "
                     } `}
                   >
-                    <p className={`p-2 text-tertiary-500 text-sm xl:text-base`}>
+                    <p className="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base">
                       {info}
                     </p>
                   </div>

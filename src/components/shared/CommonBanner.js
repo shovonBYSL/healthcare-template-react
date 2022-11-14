@@ -24,7 +24,7 @@ const CommonBanner = ({ data }) => {
           <img
             src={data.img}
             alt="banner"
-            className="w-5/6 md:w-full mx-auto max-h-[435px] object-contain"
+            className="w-5/6 md:w-full mx-auto max-h-[435px] object-contain animate-img"
           />
         </div>
       </div>

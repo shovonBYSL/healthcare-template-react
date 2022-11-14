@@ -22,7 +22,7 @@ const FeaturedServices = ({ data }) => {
               <img
                 src={icon.default}
                 alt="service logo"
-                className="h-16 xl:h-20 w-16 xl:w-80 mx-auto"
+                className="h-16 xl:h-20 w-16 xl:w-20 mx-auto"
               />
               <p className="text-primary-800 font-semibold md:text-lg xl:text-xl mt-4 mb-2">
                 {title}

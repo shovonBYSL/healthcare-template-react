@@ -48,7 +48,7 @@ const HomeBanner = () => {
           <img
             src={require("../../assets/images/home/home_banner.png")}
             alt="home banner"
-            className="md:w-full mx-auto max-h-[220px] sm:max-h-[596px] max-w-[526px]"
+            className="w-full mx-auto max-h-[220px] md:max-h-[596px] max-w-[526px] object-contain animate-img"
           />
         </div>
       </div>

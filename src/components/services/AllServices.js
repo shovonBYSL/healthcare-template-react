@@ -10,7 +10,10 @@ const AllServices = ({ data }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-y-10 xl:gap-y-16">
         {data.map(({ id, title, details, logo }) => {
           return (
-            <div key={id} className="">
+            <div
+              key={id}
+              className="hover:scale-105 transition-all duration-500 cursor-pointer"
+            >
               <img
                 src={logo.default}
                 alt="services logo"

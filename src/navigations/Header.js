@@ -22,12 +22,7 @@ const Header = () => {
           <div className="flex items-center gap-2">
             {headerSocialLinks.map(({ id, alt, icon, path }) => (
               <a key={id} rel="noreferrer" target="_blank" href={path}>
-                <img
-                  key={id}
-                  src={icon.default}
-                  alt={alt}
-                  className="h-4 lg:h-6"
-                />
+                <img src={icon.default} alt={alt} className="h-4 lg:h-6" />
               </a>
             ))}
           </div>

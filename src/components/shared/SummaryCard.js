@@ -13,7 +13,7 @@ const SummaryCard = () => {
       data-aos-once="false"
       className="container py-6 lg:py-10 xl:py-16"
     >
-      <div className="bg-primary-600 text-white text-center px-10 py-6 lg:py-10 xl:py-16 rounded-md lg:rounded-xl xl:rounded-2xl flex flex-wrap justify-around gap-y-7">
+      <div className="bg-primary-600 text-white text-center px-10 py-6 md:py-10 lg:py-12 xl:py-16 rounded-md lg:rounded-xl xl:rounded-2xl flex flex-wrap justify-around gap-y-7">
         {summaryData.map(({ id, label, number }) => {
           return (
             <div key={id} className="xxs:min-w-[120px]">
