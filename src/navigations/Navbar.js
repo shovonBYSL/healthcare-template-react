@@ -31,7 +31,11 @@ const Navbar = () => {
         }`}
       >
         <a href="/">
-          <img src={logo} alt="logo" className="h-10 lg:h-16" />
+          <img
+            src={logo}
+            alt="logo"
+            className="h-10 lg:h-16 w-[138px] lg:w-[200px]"
+          />
         </a>
         <div className="flex items-center gap-3">
           <div className="lg:hidden mb-[2px]">
@@ -60,7 +64,7 @@ const Navbar = () => {
                   {dropdowns ? (
                     <div className="relative group">
                       <button className="flex items-center group cursor-pointer">
-                        <p className="text-tertiary-300 lg:group-hover:text-primary-400 transition-all duration-200">
+                        <p className="text-tertiary-300 text-sm lg:text-base lg:group-hover:text-primary-400 transition-all duration-200">
                           {label}
                         </p>
                         <HiChevronDown className="text-tertiary-300 text-lg transition-all duration-200 lg:group-hover:text-primary-400" />
@@ -73,7 +77,7 @@ const Navbar = () => {
                               {dropdowns.map(({ id, label, path }) => (
                                 <Link key={id} to={path}>
                                   <p
-                                    className={`px-2.5 py-1 rounded block hover:text-primary-400 ${
+                                    className={`px-2.5 py-1 rounded block text-sm lg:text-base hover:text-primary-400 ${
                                       router.pathname === path
                                         ? "text-primary-600 bg-primary-50/50"
                                         : "text-tertiary-300"
@@ -90,7 +94,7 @@ const Navbar = () => {
                             {dropdowns.map(({ id, label, path }) => (
                               <Link key={id} to={path}>
                                 <p
-                                  className={`${
+                                  className={`text-sm lg:text-base ${
                                     router.pathname === path
                                       ? "text-primary-600"
                                       : "text-tertiary-300"
@@ -111,7 +115,7 @@ const Navbar = () => {
                           router.pathname === path
                             ? "text-primary-600"
                             : "text-tertiary-300"
-                        } lg:hover:text-primary-400 transition-all duration-200`}
+                        } text-sm lg:text-base lg:hover:text-primary-400 transition-all duration-200`}
                       >
                         {label}
 

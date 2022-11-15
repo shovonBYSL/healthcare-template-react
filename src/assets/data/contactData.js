@@ -23,9 +23,16 @@ const locationData = {
 };
 
 const contactGalleryPhotos = [
-  require("../images/contact/gallery/0.png"),
-  require("../images/contact/gallery/1.png"),
-  require("../images/contact/gallery/2.png"),
+  { src: require("../images/contact/gallery/0.webp") },
+  { src: require("../images/contact/gallery/1.webp") },
+  { src: require("../images/contact/gallery/2.webp") },
+  { src: require("../images/contact/gallery/3.webp") },
+  { src: require("../images/contact/gallery/4.webp") },
+  { src: require("../images/contact/gallery/5.webp") },
+  { src: require("../images/contact/gallery/6.webp") },
+  { src: require("../images/contact/gallery/7.webp") },
+  { src: require("../images/contact/gallery/8.webp") },
+  { src: require("../images/contact/gallery/9.webp") },
 ];
 
 const aboutHospitalData = {
