@@ -1,9 +1,3 @@
-// data
-import facebookIcon from "../../assets/images/social/facebookGray.svg";
-import twitterIcon from "../../assets/images/social/twitterGray.svg";
-import instagramIcon from "../../assets/images/social/instagramGray.svg";
-import linkedInIcon from "../../assets/images/social/linkedInGray.svg";
-
 const BlogDoctorInfoCard = ({ data }) => {
   const { img, name, speciality, about, socialLinks } = data;
 
@@ -28,12 +22,7 @@ const BlogDoctorInfoCard = ({ data }) => {
             {socialLinks.map((item, i) => (
               <a rel="noreferrer" target="_blank" key={i} href={item.path}>
                 <img
-                  src={
-                    (item.name === "facebook" && facebookIcon) ||
-                    (item.name === "twitter" && twitterIcon) ||
-                    (item.name === "instagram" && instagramIcon) ||
-                    (item.name === "linkedIn" && linkedInIcon)
-                  }
+                  src={require(`../../assets/images/social/${item.name}Gray.svg`)}
                   alt="social icon"
                   className="h-5 xl:h-6 w-5 xl:w-6 hover:-translate-y-1 transition-all duration-300"
                 />
