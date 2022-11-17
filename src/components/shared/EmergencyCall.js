@@ -4,7 +4,7 @@ const EmergencyCall = () => {
       <img
         src={require("../../assets/images/icons/phoneIcon.svg").default}
         alt="phone icon"
-        className="h-16 lg:h-24 2xl:h-40 w-16 lg:w-24 2xl:w-40 mx-auto animate-pulse"
+        className="h-16 lg:h-24 xl:h-36 2xl:h-40 w-16 lg:w-24 xl:w-36 2xl:w-40 mx-auto animate-pulse"
       />
       <p className="text-tertiary-600 font-semibold md:text-lg 2xl:text-2xl mt-4">
         HOTLINE NUMBER

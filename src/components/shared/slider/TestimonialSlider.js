@@ -29,7 +29,7 @@ const TestimonialSlider = () => {
       />
       <div className="grid grid-cols-12 md:gap-6 items-center testimonial-slider">
         <div className="p-2 cursor-pointer group">
-          <BsChevronLeft className="slidePrev-btn text-tertiary-100 group-hover:text-primary-600 mb-10" />
+          <BsChevronLeft className="slidePrev-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 mb-10" />
         </div>
         <div className="col-span-10">
           <Swiper
@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
           </Swiper>
         </div>
         <div className="p-2 cursor-pointer group">
-          <BsChevronRight className="slideNext-btn text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10" />
+          <BsChevronRight className="slideNext-btn xl:text-xl text-tertiary-100 group-hover:text-primary-600 md:ml-auto mb-10" />
         </div>
       </div>
     </div>
