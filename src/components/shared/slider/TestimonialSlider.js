@@ -49,10 +49,10 @@ const TestimonialSlider = () => {
             modules={[Autoplay, Navigation, Pagination]}
             className="mySwiper"
           >
-            {testimonialData.map(({ id, name, address, comment, img }) => {
+            {testimonialData.map(({ id, name, address, comment }) => {
               return (
                 <SwiperSlide key={id} className="px-4">
-                  <div className="grid grid-cols-10 space-y-2 mb-10">
+                  <div className="grid grid-cols-10 gap-x-6 gap-y-2 mb-10">
                     <div className="col-span-12 lg:col-span-3 xl:col-span-2 flex items-center gap-4">
                       <img
                         src={require("../../../assets/images/testimonial/user.png")}
@@ -68,7 +68,7 @@ const TestimonialSlider = () => {
                         </p>
                       </div>
                     </div>
-                    <p className="col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600">
+                    <p className="bar col-span-12 lg:col-span-7 xl:col-span-8 text-xxs md:text-xs lg:text-sm xl:text-base font-medium italic text-tertiary-600">
                       “{comment}”
                     </p>
                   </div>
