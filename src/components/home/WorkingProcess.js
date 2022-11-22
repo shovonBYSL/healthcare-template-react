@@ -51,16 +51,16 @@ const WorkingProcess = ({ data }) => {
             })}
           </div>
         </div>
-        <div
-          onClick={() => setIsOpen(true)}
-          className="relative rounded-xl xl:rounded-[20px] overflow-hidden cursor-pointer group"
-        >
+        <div className="relative rounded-xl xl:rounded-[20px] overflow-hidden cursor-pointer group">
           <img
             src={img}
             alt="working process section"
             className="max-h-[553px]"
           />
-          <div className="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]">
+          <div
+            onClick={() => setIsOpen(true)}
+            className="absolute top-[55%] left-[65%] -translate-x-[65%] -translate-y-[55%]"
+          >
             <div className="bg-[#E6F0FF] h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
               <VscPlay className="text-[#0047B3] lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E6F0FF] opacity-75" />
