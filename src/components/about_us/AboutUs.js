@@ -9,6 +9,7 @@ import VideoModal from "../shared/VideoModal";
 
 // data
 import video from "../../assets/videos/dummy.mp4";
+import arrow from "../../assets/images/icons/arrowDown.svg";
 
 const AboutUs = ({ data }) => {
   const { header, title, subTitle, img, details } = data;
@@ -37,7 +38,7 @@ const AboutUs = ({ data }) => {
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="bg-white h-9 lg:h-14 xl:h-20 w-9 lg:w-14 xl:w-20 relative rounded-full flex justify-center items-center">
-              <VscPlay className="text-secondary-400 lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
+              <VscPlay className="text-secondary-700 lg:text-2xl xl:text-4xl z-10 ml-1 xl:ml-1.5" />
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
             </div>
           </div>
@@ -45,7 +46,7 @@ const AboutUs = ({ data }) => {
         <div>
           <SectionHeader label={header} />
           <SectionTitle label={title} />
-          <p className="text-tertiary-500 text-xs lg:text-sm xl:text-base mb-4 xl:mb-6">
+          <p className="text-tertiary-600 text-xs lg:text-sm xl:text-base mb-4 xl:mb-6">
             {subTitle}
           </p>
           <div>
@@ -59,16 +60,18 @@ const AboutUs = ({ data }) => {
                     }
                     animate={{
                       backgroundColor:
-                        accordionActive === id ? "#daeac3" : "#fff",
+                        accordionActive === id ? "#CBE2B0" : "#fff",
                     }}
                     className="flex justify-between items-center p-2"
                   >
                     <p className="text-tertiary-500 font-medium text-sm xl:text-base">
                       {title}
                     </p>
-                    <HiOutlineChevronDown
-                      className={`transition-all duration-300 ${
-                        accordionActive === id && "rotate-180"
+                    <img
+                      src={arrow}
+                      alt=""
+                      className={`h-4 w-4 transition-all duration-300 ${
+                        accordionActive === id && "-rotate-180"
                       }`}
                     />
                   </motion.header>
@@ -93,7 +96,7 @@ const AboutUs = ({ data }) => {
                             open: { scale: 1 },
                           }}
                           transition={{ duration: 0.4 }}
-                          className="p-2 text-tertiary-500 text-xs lg:text-sm xl:text-base"
+                          className="p-2 text-tertiary-600 text-xs lg:text-sm xl:text-base"
                         >
                           {info}
                         </motion.div>
