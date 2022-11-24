@@ -23,7 +23,7 @@ const PhotoGallery = ({ data }) => {
             }}
             src={item.src}
             alt="galery images"
-            className="h-56 xl:h-64 2xl:h-96 w-full object-cover"
+            className="h-56 xl:h-64 2xl:h-96 w-full object-cover cursor-pointer"
           />
         ))}
         <ImgsViewer
