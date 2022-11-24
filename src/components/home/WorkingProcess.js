@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { VscPlay } from "react-icons/vsc";
 
 // components
@@ -9,9 +9,15 @@ import VideoModal from "../shared/VideoModal";
 import video from "../../assets/videos/dummy.mp4";
 
 const WorkingProcess = ({ data }) => {
+  const { header, title, subTitle, img, points } = data;
+
   const [isOpen, setIsOpen] = useState(false);
 
-  const { header, title, subTitle, img, points } = data;
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+  }, [isOpen]);
 
   return (
     <div
