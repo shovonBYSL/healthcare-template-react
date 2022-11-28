@@ -1,5 +1,4 @@
 const locationData = {
-  map: require("../images/contact/map.png"),
   locations: [
     {
       id: 0,
